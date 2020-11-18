@@ -31,7 +31,7 @@ ol[class] {
   --clr-dark: #303030;
   --clr-dark-trans: rgba(48, 48, 48, 0.5);
   --clr-dark-hover: rgba(48, 48, 48, 0.7);
-  --clr-link: #0084b8;
+  --clr-link: #007a99;
   --clr-accent: #77e4ff;
   --clr-accent-hover: rgba(108, 224, 253, 0.8);
 
@@ -117,6 +117,8 @@ p {
   margin-bottom: .75em;
 }
 
+/* Links and buttons */
+
 a {
   color: var(--clr-link);
   text-decoration: none;
@@ -125,6 +127,15 @@ a {
 a:hover,
 a:focus {
   color: var(--clr-dark);
+}
+
+a.light-link {
+  color: var(--clr-accent);
+}
+
+a.light-link:hover,
+a.light-link:focus {
+  color: var(--clr-light);
 }
 
 :focus {
@@ -169,6 +180,7 @@ h4 { font-size: var(--fs-h4) }
 
 .section-title {
   margin-bottom: .25em;
+  font-weight: var(--fw-light);
 }
 
 .section-title--intro {
@@ -201,19 +213,26 @@ h4 { font-size: var(--fs-h4) }
   font-weight: var(--fw-bold);
 }
 
-
 /* Header and Nav */
 
 header {
   display: flex;
-  padding: 1.175em 1.75em;
+  padding: 1.5em 1.75em 0;
+  /* border: 1px solid red; */
 }
 
 @media (min-width: 600px) {
   header {
-    padding: 1em 2em;
+    padding: 1.5em 2em .75em;
   }
 }
+
+@media (min-width: 768px) {
+  header {
+    padding: 1.25em 2em 1em;
+  }
+}
+
 
 .nav {
   position: fixed;
@@ -373,6 +392,7 @@ header {
 .portfolio-breadcrumb {
   display: inline;
   font-weight: var(--fw-reg);
+  color: var(--clr-link);
 }
 
 .portfolio-breadcrumb + .portfolio-breadcrumb:before {
@@ -382,8 +402,9 @@ header {
   padding: 0.5em;
 }
 
-.current-breadcrumb {
-  font-weight: var(--fw-light);
+.breadcrumb-current {
+  font-weight: var(--fw-reg);
+  color: var(--clr-dark);
 }
 
 .portfolio-list--nav {
@@ -526,7 +547,7 @@ header {
     margin-top: 0px;
   }
 
-  /* Hexspire portfolio page subtitle */
+  /* Indidivual ortfolio page subtitle spacing */
 
   .hexspire-subtitle {
     padding-right: 2.65em;
@@ -534,6 +555,10 @@ header {
 
   .blearyeyed-subtitle {
     padding-right: 3.85em;
+  }
+
+  .punkapi-subtitle {
+    padding-right: 1.325em;
   }
 }
 
@@ -572,6 +597,10 @@ header {
 
   .blearyeyed-subtitle {
     padding-right: 4.9em;
+  }
+
+  .punkapi-subtitle {
+    padding-right: 2em;
   }
 }
 

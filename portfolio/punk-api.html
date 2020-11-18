@@ -5,44 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <script src="https://kit.fontawesome.com/0e8ff5a22e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:300,700,800x&display=swap" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
-  <script src="js/index.js" defer></script>
-  <script src="js/carousel.js" defer></script>
-  <title>Matt Wenc Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:300,400,600,700,800x&display=swap" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+  <script src="../js/index.js" defer></script>
+  <script src="../js/carousel.js" defer></script>
+  <title>MW Portfolio - Punk API Beer Filter</title>
 </head>
 <body>
-  <header id="home">
+  <header class="portfolio-page">
+    <nav class="portfolio-breadcrumbs--container">
+      <ol class="portfolio-breadcrumbs">
+        <li class="portfolio-breadcrumb"><a href="../index.html#work">My Work</a></li>
+        <li class="portfolio-breadcrumb breadcrumb-current" aria-current="page">Punk API Filter</li>
+      </ol>
+    </nav>
+    <div class="portfolio-list--nav">
+      <ul class="portfolio-list">
+        <li class="portfolio-list--item">
+          <a href="hexspire.html" class="portfolio-list--link">HexSpire Selector</a>
+        </li>
+        <li class="portfolio-list--item">
+          <a href="netflix-clone.html" class="portfolio-list--link">Netflix Clone</a>
+        </li>
+        <li class="portfolio-list--item">
+          <a href="bleary-eyed.html" class="portfolio-list--link">Bleary-eyed Quiz</a>
+        </li>
+        <li class="portfolio-list--item current-page" class="portfolio-list--link">
+          <a href="punk-api.html" class="portfolio-list--link">Punk API Filter</a></li>
+      </ul>
+    </div>
+
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
     </button>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.html#services" class="nav-link">My Services</a></li>
-        <li class="nav-item"><a href="index.html#about" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="index.html#work" class="nav-link">My Work</a></li>
-        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#services" class="nav-link">My Services</a></li>
+        <li class="nav-item"><a href="../index.html#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="../index.html#work" class="nav-link">My Work</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="intro" id="portfolio-item-intro">
+  <!-- Introduction -->
+  <section class="intro">
     <h1 class="section-title section-title--intro">
-        Punk API <strong>Beer filter app</strong>
+      Punk API<br>
+      <strong>Beer Filter</strong>
     </h1>
-    <p class="section-subtitle section-subtitle--intro project">Sort beers by ABV & IBU</p>
-    <img src="img/my-work/punk-api/punk-api-sqr.png" alt="" class="intro-img light-shadow">
+    <p class="section-subtitle section-subtitle--intro punkapi-subtitle">Filter by ABV & IBU</p>
+    <img src="../img/my-work/punk-api/punk-api-sqr.png" alt="Cropped view of Bleary-Eyed quiz" class="intro-img portfolio-item">
   </section>
 
-  <div class="portfolio-item-container">
-    <div class="portfolio-item-individual">
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-      <img src="img/portfolio-details.jpg" alt="">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-      <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+  <section class="portfolio-item--individual">
+    <div class="portfolio-item--description">
+      <h4>Description</h4>
+      <p>The <strong>Punk API Beer Filter</strong> provides the user the ability to filter the API's beer list by alcohol volume (ABV) and/or hoppiness (IBU) and view information about the individual beers.</p>
     </div>
-  </div>
+    <div class="carousel">
+      <button class="carousel--button carousel--button-left is-hidden">&#10094;</button>
+      <div class="carousel--track-container">
+        <ul class="carousel--track">
+          <li class="carousel--slide current-slide">
+            <img src="../img/my-work/punk-api/punk-api-wide.png" alt="Cropped view of Punk API beer filter app" class="carousel--image">
+          </li>
+          <li class="carousel--slide">
+            <img src="../img/my-work/punk-api/punk-api-wide-info.png" alt="Cropped view of Punk API beer filter app" class="carousel--image">
+          </li>
+        </ul>
+      </div>
+      <button class="carousel--button carousel--button-right">&#10095;</button>
+  
+      <!-- Slideshow counter dots -->
+      <div class="carousel--nav">
+        <button class="carousel--indicator current-slide"></button>
+        <button class="carousel--indicator"></button>
+      </div>
+    </div>
+    <div class="portfolio-item--features">
+      <h4>Features</h4>
+      <ul class="features-list">
+        <li>Built using HTML, CSS, vanilla JavaScript, and the <a href="https://punkapi.com/" target="blank" class="light-link">Punk API</a>.</li>
+        <li>Modifiable SVG icons are used to represent levels of hoppiness and alcohol volume.</li>
+        <li>Responsive design that utilizes CSS Grid, CSS Flexbox, and media queries to properly display results across devices.</li>
+        <li>Celebrity order and multiple choice names are displayed at random.</li>
+      </ul>
+    </div>
+    <div class="portfolio-item--link">
+      <a href="https://quizzical-gates-9f4732.netlify.app/" target="blank" class="btn">Visit Punk API Filter</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -58,10 +112,6 @@
         <a class="social-list--link" href="https://www.linkedin.com/in/mwenc/"><i class="fab fa-linkedin"></i></a>
       </li>
     </ul>
-
   </footer>
-
-
-  
 </body>
 </html>
