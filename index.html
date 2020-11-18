@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <script src="https://kit.fontawesome.com/0e8ff5a22e.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:300,400,600,700,800x&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/index.js" defer></script>
+  <meta name="description" content="The portfolio of website of Matt Wenc, a front-end developer based in Chicago."/>
+  <title>Matt Wenc Portfolio</title>
+</head>
+<body>
+  <header id="home">
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Introduction -->
+  <section class="intro">
+    <h1 class="section-title section-title--intro">
+      Hi, I'm<br>
+      <strong>Matt Wenc</strong>
+    </h1>
+    <p class="section-subtitle section-subtitle--intro">Front-end Developer</p>
+    <img src="img/portrait_mw.jpg" alt="portrait of Matt Wenc" class="intro-img">
+  </section>
+
+  <!-- My services -->
+  <section class="my-services" id="services">
+    <h2 class="section-title section-title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>HTML & CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div> <!-- / service -->
+    
+      <div class="service">
+        <h3>JavaScript / React</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div> <!-- / service -->
+    
+      <div class="service">
+        <h3>Design</h3>
+        <p>I have an extensive background in fine art, including an M.F.A. in Two-Dimensional Studies. I am versed in design principles and color theory. This knowledge translates to a thorough understanding of the fundamentals of UI design, such as scale, contrast, white space, color, and visual hierarchy.  </p>
+      </div> <!-- / service -->
+    </div> <!-- / services -->
+
+    <a href="#work" class="btn">My Work</a>
+  </section>
+
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section-title section-title--about">Who I am</h2>
+    <p class="section-subtitle section-subtitle--about">Front-end developer based in Chicago</p>
+
+    <div class="about-me--body">
+      <p>Text analytics specialist turned front-end developer. As a natural language processing professional for eight years in the news publishing industry, I authored thousands of complex boolean expressions that automatically tagged content with relevant topics.</p>
+      <p>In 2019, I decided to pursue a new professional challenge and become a web developer. To jumpstart this goal, I attended <a href="https://anyonecanlearntocode.com/" target="blank">Actualize</a> coding bootcamp, followed by extensive independent study, including the completion Scrimba's <a href="https://scrimba.com/learn/frontend" target="blank">Frontend Developer Career Path</a>.
+      </p>
+    </div>
+
+    <img src="img/code-horiz-2a.jpg" alt="JavaScript code" class="about-me-img--horiz">
+    <img src="img/code-vert-2a.jpg" alt="JavaScript code" class="about-me-img--vert">
+
+  </section>
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section-title--work">My Work</h2>
+    <p class="section-subtitle--work">A selection of my range of work</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 - -->
+      <a href="portfolio/hexspire.html" class="portfolio-item">
+        <img src="img/my-work/hexspire/hexspire-sqr.png" alt="Hexspire color selector app" class="portfolio-img">
+        <div class="app-name-btn">
+          <p class="app-name">HexSpire<br>Color Selector</p>
+          <button class="project-btn">View project</button>
+        </div>
+      </a>
+
+      <!-- Portfolio item 02 -->
+      <a href="portfolio/netflix-clone.html" class="portfolio-item">
+        <img src="img/portfolio-01.jpg" alt="Netflix clone" class="portfolio-img">
+        <div class="app-name-btn">
+          <p class="app-name">Netflix<br>Clone</p>
+          <button class="project-btn">View project</button>
+        </div>
+      </a>
+
+      <!-- Portfolio item 03 -->
+      <a href="portfolio/bleary-eyed.html" class="portfolio-item">
+        <img src="img/my-work/bleary-eyed/bleary-eyed-sqr.png" alt="" class="portfolio-img">
+        <div class="app-name-btn">
+          <p class="app-name">Bleary-eyed<br>Celebrity Quiz</p>
+          <button class="project-btn">View project</button>
+        </div>
+      </a>
+
+      <!-- Portfolio item 04 -->
+      <a href="portfolio/punk-api.html" class="portfolio-item">
+        <img src="img/my-work/punk-api/punk-api-sqr.png" alt="Punk API beer app" class="portfolio-img">
+        <div class="app-name-btn">
+          <p class="app-name">Punk API<br>Beer Filter</p>
+          <button class="project-btn">View project</button>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <a href="mailto:wenc.matt@gmail.com" class="footer-link">wenc.matt@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://github.com/fromwhence"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://codepen.io/dashboard/"><i class="fab fa-codepen"></i></a>
+      </li>
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://www.linkedin.com/in/mwenc/"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+
+  </footer>
+
+
+  
+</body>
+</html>

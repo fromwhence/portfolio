@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <script src="https://kit.fontawesome.com/0e8ff5a22e.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:300,400,600,700,800x&display=swap" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet">
+  <script src="../js/index.js" defer></script>
+  <script src="../js/carousel.js" defer></script>
+  <title>Matt Wenc Portfolio - Bleary-eyed Quiz</title>
+</head>
+<body>
+  <header class="portfolio-page">
+    <nav class="portfolio-breadcrumbs--container">
+      <ol class="portfolio-breadcrumbs">
+        <li class="portfolio-breadcrumb"><a href="../index.html#work">My Work</a></li>
+        <li class="portfolio-breadcrumb current-breadcrumb">Bleary-eyed Quiz</li>
+      </ol>
+    </nav>
+    <div class="portfolio-list--nav">
+      <ul class="portfolio-list">
+        <li class="portfolio-list--item">
+          <a href="hexspire.html" class="portfolio-list--link">HexSpire Selector</a>
+        </li>
+        <li class="portfolio-list--item">
+          <a href="netflix-clone.html" class="portfolio-list--link">Netflix Clone</a>
+        </li>
+        <li class="portfolio-list--item current-page">
+          <a href="bleary-eyed.html" class="portfolio-list--link">Bleary-eyed Quiz</a>
+        </li>
+        <li class="portfolio-list--item" class="portfolio-list--link">
+          <a href="punk-api.html" class="portfolio-list--link">Punk API Filter</a></li>
+      </ul>
+    </div>
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#services" class="nav-link">My Services</a></li>
+        <li class="nav-item"><a href="../index.html#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="../index.html#work" class="nav-link">My Work</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <h1 class="section-title section-title--intro">
+      Bleary-eyed<br>
+      <strong>Celebrity Quiz</strong>
+    </h1>
+    <p class="section-subtitle section-subtitle--intro blearyeyed-subtitle">Photo identification</p>
+    <img src="../img/my-work/bleary-eyed/bleary-eyed-sqr.png" alt="Cropped view of Bleary-Eyed quiz" class="intro-img portfolio-item">
+  </section>
+
+  <section class="portfolio-item--individual">
+    <div class="portfolio-item--description">
+      <h4>Description</h4>
+      <p>The <strong>Bleary-Eyed Quiz</strong> is a celebrity quiz that presents users blurry photos to identify for points. With each incorrect answer the image becomes less blurry and the potential points decrease.</p>
+    </div>
+    <div class="carousel">
+      <button class="carousel--button carousel--button-left is-hidden">&#10094;</button>
+      <div class="carousel--track-container">
+        <ul class="carousel--track">
+          <li class="carousel--slide current-slide">
+            <img src="../img/my-work/bleary-eyed/bleary-eyed-blur-sgomez.png" alt="Cropped view of Bleary-eyed quiz" class="carousel--image">
+          </li>
+          <li class="carousel--slide">
+            <img src="../img/my-work/bleary-eyed/bleary-eyed-clear-sgomez.png" alt="Cropped view of Bleary-eyed quiz" class="carousel--image">
+          </li>
+          <li class="carousel--slide">
+            <img src="../img/my-work/bleary-eyed/bleary-eyed-wide-score.png" alt="Cropped view of Bleary-eyed quiz score page" class="carousel--image">
+          </li>
+        </ul>
+      </div>
+      <button class="carousel--button carousel--button-right">&#10095;</button>
+  
+      <!-- Slideshow counter dots -->
+      <div class="carousel--nav">
+        <button class="carousel--indicator current-slide"></button>
+        <button class="carousel--indicator"></button>
+        <button class="carousel--indicator"></button>
+      </div>
+    </div>
+    <div class="portfolio-item--features">
+      <h4>Features</h4>
+      <ul class="features-list">
+        <li>Built using HTML, CSS, and vanilla JavaScript.</li>
+        <li>Responsive design, best-suited for larger screens.</li>
+        <li>The blurred effect is acheived using the CSS filter property and JavaScript.</li>
+        <li>Celebrity order and multiple choice names are displayed at random.</li>
+        <li>The social media sharing feature uses AddThis.</li>
+      </ul>
+    </div>
+    <div class="portfolio-item--link">
+      <a href="https://blearyeyedquiz.com" target="blank" class="btn">Visit Bleary-Eyed</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:wenc.matt@gmail.com" class="footer-link">wenc.matt@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://github.com/fromwhence"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://codepen.io/dashboard/"><i class="fab fa-codepen"></i></a>
+      </li>
+      <li class="social-list--item">
+        <a class="social-list--link" href="https://www.linkedin.com/in/mwenc/"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+
+  </footer>
+
+
+  
+</body>
+</html>
