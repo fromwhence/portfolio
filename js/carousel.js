@@ -9,11 +9,20 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 const slideHeight = slides[0].getBoundingClientRect().height;
-const slideImage = document.querySelector('.carousel--image');
+const slideImageSml = document.querySelector('.carousel--image-sml');
+const slideImageLrg = document.querySelector('.carousel--image-lrg');
 
+console.log(slideImageSml, slideImageLrg);
+
+// Resize carsousel based on slide image height
 const reSizeCarouselHeight = () => {
-  let imageHeight = slideImage.height;
-  carousel.style.height = `${imageHeight + 2}px`;
+  if (window.innerWidth < 600) {
+    let imageHeight = slideImageSml.height;
+    carousel.style.height = `${imageHeight + 2}px`;
+  } else {
+    let imageHeight = slideImageLrg.height;
+    carousel.style.height = `${imageHeight + 2}px`;
+  }
 }
 
 window.addEventListener('load', reSizeCarouselHeight);
