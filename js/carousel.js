@@ -36,11 +36,14 @@ const reSizeCarouselHeight = () => {
 }
 
 window.addEventListener('load', reSizeCarouselHeight);
-window.addEventListener('resize', reSizeCarouselHeight);
+window.addEventListener('resize', function() {
+  location.reload();
+  reSizeCarouselHeight();
+});
 window.addEventListener('orientationchange', function() {
   location.reload();
   reSizeCarouselHeight();
-);
+});
 
 const setSlidePosition = (slide, index) => {
   slide.style.left = `${slideWidth * index}px`; 
