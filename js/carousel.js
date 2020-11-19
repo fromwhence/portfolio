@@ -9,18 +9,28 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 const slideHeight = slides[0].getBoundingClientRect().height;
-const slideImageSml = document.querySelector('.carousel--image-sml');
-const slideImageLrg = document.querySelector('.carousel--image-lrg');
-
-console.log(slideImageSml, slideImageLrg);
+const slideImagesSmall = Array.from(document.getElementsByClassName('carousel--image-sml'));
+const slideImagesLarge = Array.from(document.getElementsByClassName('carousel--image-lrg'));
 
 // Resize carsousel based on slide image height
 const reSizeCarouselHeight = () => {
   if (window.innerWidth < 600) {
-    let imageHeight = slideImageSml.height;
+    slideImagesSmall.forEach(image => {
+      image.classList.remove('is-hidden');
+    });
+    slideImagesLarge.forEach(image => {
+      image.classList.add('is-hidden');
+    });
+    let imageHeight = slideImagesSmall[0].height;
     carousel.style.height = `${imageHeight + 2}px`;
   } else {
-    let imageHeight = slideImageLrg.height;
+    slideImagesSmall.forEach(image => {
+      image.classList.add('is-hidden');
+    });
+    slideImagesLarge.forEach(image => {
+      image.classList.remove('is-hidden');
+    });
+    let imageHeight = slideImagesLarge[0].height;
     carousel.style.height = `${imageHeight + 2}px`;
   }
 }

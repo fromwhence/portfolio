@@ -1015,15 +1015,6 @@ header {
   display: none;
 }
 
-@media (min-width: 600px) {
-  .carsousel--image-sml {
-    display: none;
-  }
-  .carousel--image-lrg {
-    display: block;
-  }
-}
-
 .carousel--button {
   cursor: pointer;
   position: absolute;
