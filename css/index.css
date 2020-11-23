@@ -30,7 +30,7 @@ ol[class] {
   --clr-mid-dark: #949494;
   --clr-dark: #303030;
   --clr-dark-trans: rgba(48, 48, 48, 0.5);
-  --clr-dark-hover: rgba(48, 48, 48, 0.7);
+  --clr-dark-hover: rgba(48, 48, 48, 0.8);
   --clr-link: #006999;
   --clr-accent: #77e4ff;
   --clr-accent-hover: rgba(108, 224, 253, 0.8);
@@ -42,10 +42,6 @@ ol[class] {
   --fs-h5: 1.125em;
   --fs-body: 1rem;
   --fs-small: 0.9rem;
-
-  --boxshadow:  
-    0.375em 0.5em 0.75em rgba(0,0,0,.375), 
-    0.125em 0.125em 0.25em rgba(0,0,0,.25);
 
   --boxshadow-light:  
     0.175em 0.5em 0.75em rgba(0,0,0,.2), 
@@ -490,7 +486,7 @@ header {
 }
 
 .intro-img {
-  box-shadow: var(--boxshadow);
+  box-shadow: var(--boxshadow-light);
 }
 
 .section-title--intro {
@@ -534,6 +530,10 @@ header {
     padding-bottom: 0;
   }
 
+  .netflix-clone-title {
+    padding-right: 2.5em;
+  }
+
   .section-subtitle--intro {
     align-self: start;
     grid-column: 1 / -1;
@@ -559,6 +559,10 @@ header {
 
   .punkapi-subtitle {
     padding-right: 1.325em;
+  }
+
+  .netflix-clone-subtitle {
+    padding-right: 1em;
   }
 }
 
@@ -602,6 +606,10 @@ header {
   .punkapi-subtitle {
     padding-right: 2em;
   }
+
+  .netflix-clone-subtitle {
+    padding-right: 1.75em;
+  }
 }
 
 /* My services section */
@@ -638,6 +646,12 @@ header {
   margin: 0 auto 2em auto;
 }
 
+@media (min-width: 700px) {
+  .service {
+    max-width: 600px;
+  }
+}
+
 .service:last-of-type {
   margin-bottom: 1em;
 }
@@ -646,12 +660,12 @@ header {
   margin-bottom: 0.75em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   .services {
     display: flex;
     max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-bottom: 2.75em;
   }
 
   .service {
@@ -659,7 +673,7 @@ header {
   }
 
   .service + .service {
-    margin-left: 3em;
+    margin-left: 3.5em;
   }
 
   .service p {
@@ -1031,12 +1045,12 @@ header {
 }
 
 .carousel--button-left {
-  left: 0;
+  left: 1px;
   padding-right: .7em;
 }
 
 .carousel--button-right {
-  right: 0;
+  right: 1px;
   padding-left: .7em;
 }
 
