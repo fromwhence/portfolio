@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -19,9 +21,7 @@ ol[class] {
 
   --fw-light: 300;
   --fw-reg: 400;
-  --fw-semi-bold: 600;
   --fw-bold: 700;
-  --fw-extra-bold: 800;
 
   --clr-light: #fff;
   --clr-light-active: rgb(255, 255, 255, 0.9);
@@ -621,10 +621,16 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../img/services-bg-drk.jpg);
+  background-image: url(../img/services-bg-sml-drk.jpg);
   background-size: cover;
   color: var(--clr-light);
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .my-services {
+    background-image: url(../img/services-bg-drk-2.jpg);
+  }
 }
 
 .section-title--services {
@@ -773,12 +779,12 @@ header {
   }
 
   .section-title--about {
-    margin-top: 0.5em;
-    margin-bottom: 0;
+    margin-top: 0.25em;
+    margin-bottom: 0.325em;
   }
 
   .section-subtitle--about {
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 
   .about-me--body p {
