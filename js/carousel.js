@@ -1,3 +1,4 @@
+'use strict';
 // Carousel
 const carousel = document.querySelector('.carousel');
 const track = document.querySelector('.carousel--track');
@@ -37,13 +38,13 @@ const reSizeCarouselHeight = () => {
 
 window.addEventListener('load', reSizeCarouselHeight);
 window.addEventListener('resize', reSizeCarouselHeight);
-window.addEventListener('orientationchange', function() {
+window.addEventListener('orientationchange', function () {
   location.reload();
   reSizeCarouselHeight();
 });
 
 const setSlidePosition = (slide, index) => {
-  slide.style.left = `${slideWidth * index}px`; 
+  slide.style.left = `${slideWidth * index}px`;
 };
 slides.forEach(setSlidePosition);
 
@@ -97,7 +98,7 @@ prevButton.addEventListener('click', e => {
   moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
-}); 
+});
 
 dotsNav.addEventListener('click', e => {
   const targetDot = e.target.closest('button');
