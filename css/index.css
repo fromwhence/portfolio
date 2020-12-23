@@ -120,7 +120,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--clr-dark);
+  color: var(--clr-accent);
 }
 
 a.light-link {
@@ -210,7 +210,9 @@ h4 {
   margin-bottom: 1.75em;
 }
 
+.portfolio-link,
 .footer-link {
+  color: var(--clr-accent);
   font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
 }
@@ -810,6 +812,24 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+}
+
+.portfolio-link {
+  display: inline-block;
+  margin: 0.85em 0 1.5em;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-link {
+    pointer-events: auto;
+  }
+}
+
+.portfolio-link:hover {
+  color: var(--clr-accent);
+  text-decoration: underline;
+  opacity: 0.9;
 }
 
 .portfolio {
