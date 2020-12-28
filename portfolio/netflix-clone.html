@@ -1,126 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <script src="https://kit.fontawesome.com/0e8ff5a22e.js" crossorigin="anonymous"></script>
-  <link href="../css/index.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="../img/favicon.png">
-  <script src="../js/index.js" defer></script>
-  <script src="../js/carousel.js" defer></script>
-  <meta name="description" content="The portfolio site of Matt Wenc, a front-end developer based in Chicago."/>
-  <title>Matt Wenc Portfolio - Netflix Clone</title>
-</head>
-<body>
-  <header class="portfolio-page">
-    <nav class="portfolio-breadcrumbs--container">
-      <ol class="portfolio-breadcrumbs">
-        <li class="portfolio-breadcrumb"><a href="../index.html#work">My Work</a></li>
-        <li class="portfolio-breadcrumb breadcrumb-current" aria-current="page">Netflix Clone</li>
-      </ol>
-    </nav>
-    <nav class="portfolio-list--nav">
-      <ul class="portfolio-list">
-        <li class="portfolio-list--item" class="portfolio-list--link">
-          <a href="punk-api.html" class="portfolio-list--link">Punk API Filter</a>
-        </li>
-        <li class="portfolio-list--item">
-          <a href="hexspire.html" class="portfolio-list--link">HexSpire Selector</a>
-        </li>
-        <li class="portfolio-list--item">
-          <a href="bleary-eyed.html" class="portfolio-list--link">Bleary-eyed Quiz</a>
-        </li>
-        <li class="portfolio-list--item current-page">
-          <a href="netflix-clone.html" class="portfolio-list--link">Netflix Clone</a>
-        </li>
-      </ul>
-    </nav>
-
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="../index.html#services" class="nav-link">My Services</a></li>
-        <li class="nav-item"><a href="../index.html#about" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="../index.html#work" class="nav-link">My Work</a></li>
-        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Introduction -->
-  <section class="intro">
-    <h1 class="section-title section-title--intro netflix-clone-title">
-      Netflix<br>
-      <strong>Clone</strong>
-    </h1>
-    <p class="section-subtitle section-subtitle--intro netflix-clone-subtitle">Scrimba final project</p>
-    <img src="../img/my-work/netflix-clone/netflix-clone-sqr.png" alt="Cropped view of HexSpire application" class="intro-img portfolio-item">
-  </section>
-
-  <section class="portfolio-item--individual">
-    <div class="portfolio-item--description">
-      <h4>Description</h4>
-      <p>Built using React, the <strong>Netflix Clone</strong> displays a selection of random colors. The user can view a color's hex value, add colors to the favorite section, and copy the hex color codes from the favorites to the clipboard for additional use. The color grid can be sorted by hue and refreshed to display a new set of random colors.</p>
-    </div>
-    <div class="carousel">
-      <button class="carousel--button carousel--button-left is-hidden">&#10094;</button>
-      <div class="carousel--track-container">
-        <ul class="carousel--track">
-          <li class="carousel--slide current-slide">
-            <img src="../img/my-work/netflix-clone/netflix-clone-sml-home.png" alt="Cropped view of Netflix Clone" class="carousel--image-sml is-hidden">
-            <img src="../img/my-work/netflix-clone/netflix-clone-wide-home.png" alt="Cropped view of Netflix Clone" class="carousel--image-lrg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/0e8ff5a22e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <meta
+      name="description"
+      content="The portfolio site of Matt Wenc, a front-end developer based in Chicago."
+    />
+    <title>Matt Wenc Portfolio - Netflix Clone</title>
+  </head>
+  <body>
+    <header class="portfolio-page">
+      <nav class="portfolio-breadcrumbs--container">
+        <ol class="portfolio-breadcrumbs">
+          <li class="portfolio-breadcrumb">
+            <a href="../index.html#work">My Work</a>
           </li>
-          <li class="carousel--slide">
-            <img src="../img/my-work/netflix-clone/netflix-clone-sml-movies.png" alt="Cropped view of Netflix Clone" class="carousel--image-sml is-hidden">
-            <img src="../img/my-work/netflix-clone/netflix-clone-wide-movies.png" alt="Cropped view of Netflix Clone" class="carousel--image-lrg">
+          <li
+            class="portfolio-breadcrumb breadcrumb-current"
+            aria-current="page"
+          >
+            Netflix Clone
           </li>
-          <li class="carousel--slide">
-            <img src="../img/my-work/netflix-clone/netflix-clone-sml-movie-detail.png" alt="Cropped view of Netflix Clone" class="carousel--image-sml is-hidden">
-            <img src="../img/my-work/netflix-clone/netflix-clone-wide-movie-detail.png" alt="Cropped view of Netflix Clone" class="carousel--image-lrg">
+        </ol>
+      </nav>
+      <nav class="portfolio-list--nav">
+        <ul class="portfolio-list">
+          <li class="portfolio-list--item" class="portfolio-list--link">
+            <a href="punk-api.html" class="portfolio-list--link"
+              >Punk API Filter</a
+            >
+          </li>
+          <li class="portfolio-list--item">
+            <a href="hexspire.html" class="portfolio-list--link"
+              >HexSpire Selector</a
+            >
+          </li>
+          <li class="portfolio-list--item">
+            <a href="bleary-eyed.html" class="portfolio-list--link"
+              >Bleary-eyed Quiz</a
+            >
+          </li>
+          <li class="portfolio-list--item current-page">
+            <a href="netflix-clone.html" class="portfolio-list--link"
+              >Netflix Clone</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#services" class="nav-link">My Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#work" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section-title section-title--intro netflix-clone-title">
+        Netflix<br />
+        <strong>Clone</strong>
+      </h1>
+      <p
+        class="section-subtitle section-subtitle--intro netflix-clone-subtitle"
+      >
+        Scrimba final project
+      </p>
+      <img
+        src="../img/my-work/netflix-clone/netflix-clone-sqr.png"
+        alt="Cropped view of HexSpire application"
+        class="intro-img portfolio-item"
+      />
+    </section>
+
+    <section class="portfolio-item--individual">
+      <div class="portfolio-item--description">
+        <h4>Description</h4>
+        <p>
+          Built using React, the <strong>Netflix Clone</strong> displays a
+          selection of random colors. The user can view a color's hex value, add
+          colors to the favorite section, and copy the hex color codes from the
+          favorites to the clipboard for additional use. The color grid can be
+          sorted by hue and refreshed to display a new set of random colors.
+        </p>
+      </div>
+      <div class="carousel">
+        <button class="carousel--button carousel--button-left is-hidden">
+          &#10094;
+        </button>
+        <div class="carousel--track-container">
+          <ul class="carousel--track">
+            <li class="carousel--slide current-slide">
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-sml-home.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-sml is-hidden"
+              />
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-wide-home.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-lrg"
+              />
+            </li>
+            <li class="carousel--slide">
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-sml-movies.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-sml is-hidden"
+              />
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-wide-movies.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-lrg"
+              />
+            </li>
+            <li class="carousel--slide">
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-sml-movie-detail.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-sml is-hidden"
+              />
+              <img
+                src="../img/my-work/netflix-clone/netflix-clone-wide-movie-detail.png"
+                alt="Cropped view of Netflix Clone"
+                class="carousel--image-lrg"
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel--button carousel--button-right">
+          &#10095;
+        </button>
+        <!-- Slideshow counter dots -->
+        <div class="carousel--nav">
+          <button class="carousel--indicator current-slide"></button>
+          <button class="carousel--indicator"></button>
+          <button class="carousel--indicator"></button>
+        </div>
+      </div>
+      <div class="portfolio-item--features">
+        <h4>Features</h4>
+        <ul class="features-list">
+          <li>
+            A React application, built using JSX, JavaScript, CSS, and Firebase.
+          </li>
+          <li>
+            Data for the movies and TV series is stored and accessed using Cloud
+            Firestore.
+          </li>
+          <li>
+            React compound components are used to build the component library.
+          </li>
+          <li>
+            React styled components are used to apply CSS into reusuable
+            components.
+          </li>
+          <li>
+            User sign-in/authentification is managed with Firebase
+            Authentification.
           </li>
         </ul>
       </div>
-      <button class="carousel--button carousel--button-right">&#10095;</button>
-      <!-- Slideshow counter dots -->
-      <div class="carousel--nav">
-        <button class="carousel--indicator current-slide"></button>
-        <button class="carousel--indicator"></button>
-        <button class="carousel--indicator"></button>
+      <div class="portfolio-item--link">
+        <a
+          href="https://nervous-aryabhata-8d2441.netlify.app/"
+          target="blank"
+          class="btn"
+          >Visit Netflix Clone</a
+        >
       </div>
-    </div>
-    <div class="portfolio-item--features">
-      <h4>Features</h4>
-      <ul class="features-list">
-        <li>A React application, built using JSX, JavaScript, CSS, and Firebase.</li>
-        <li>Data for the movies and TV series is stored and accessed using Cloud Firestore.</li>
-        <li>React compound components are used to build the component library.</li>
-        <li>React styled components are used to apply CSS into reusuable components.</li>
-        <li>User sign-in/authentification is managed with Firebase Authentification.</li>
-      </ul>
-    </div>
-    <div class="portfolio-item--link">
-      <a href="https://nervous-aryabhata-8d2441.netlify.app/" target="blank" class="btn">Visit Netflix Clone</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="mailto:wenc.matt@gmail.com" class="footer-link">wenc.matt@gmail.com</a>
-    <ul class="social-list">
-      <li class="social-list--item">
-        <a class="social-list--link" href="https://github.com/fromwhence"><i class="fab fa-github"></i></a>
-      </li>
-      <li class="social-list--item">
-        <a class="social-list--link" href="https://codepen.io/dashboard/"><i class="fab fa-codepen"></i></a>
-      </li>
-      <li class="social-list--item">
-        <a class="social-list--link" href="https://www.linkedin.com/in/mwenc/"><i class="fab fa-linkedin"></i></a>
-      </li>
-    </ul>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:wenc.matt@gmail.com" class="footer-link"
+        >wenc.matt@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list--item">
+          <a class="social-list--link" href="https://github.com/fromwhence"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list--item">
+          <a class="social-list--link" href="https://codepen.io/dashboard/"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </li>
+        <li class="social-list--item">
+          <a class="social-list--link" href="https://www.linkedin.com/in/mwenc/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/portfolio.js" defer></script>
+    <script src="../js/carousel.js" defer></script>
+  </body>
 </html>

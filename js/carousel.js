@@ -10,8 +10,12 @@ const dots = Array.from(dotsNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 const slideHeight = slides[0].getBoundingClientRect().height;
-const slideImagesSmall = Array.from(document.getElementsByClassName('carousel--image-sml'));
-const slideImagesLarge = Array.from(document.getElementsByClassName('carousel--image-lrg'));
+const slideImagesSmall = Array.from(
+  document.getElementsByClassName('carousel--image-sml')
+);
+const slideImagesLarge = Array.from(
+  document.getElementsByClassName('carousel--image-lrg')
+);
 
 // Resize carsousel based on slide image height
 const reSizeCarouselHeight = () => {
@@ -34,7 +38,7 @@ const reSizeCarouselHeight = () => {
     let imageHeight = slideImagesLarge[0].height;
     carousel.style.height = `${imageHeight + 2}px`;
   }
-}
+};
 
 window.addEventListener('load', reSizeCarouselHeight);
 window.addEventListener('resize', reSizeCarouselHeight);
@@ -63,16 +67,14 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-  }
-  else if (targetIndex === slides.length - 1) {
+  } else if (targetIndex === slides.length - 1) {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.add('is-hidden');
-  }
-  else {
+  } else {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.remove('is-hidden');
   }
-}
+};
 
 // Move to next slide
 nextButton.addEventListener('click', e => {

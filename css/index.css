@@ -120,7 +120,8 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: underline;
 }
 
 a.light-link {
@@ -155,6 +156,7 @@ a.light-link:focus {
 .btn:hover {
   color: #000;
   background: var(--clr-accent);
+  text-decoration: none;
 }
 
 /* Typography */
@@ -274,6 +276,7 @@ header {
 
 .nav-link:hover {
   color: var(--clr-accent);
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -469,6 +472,8 @@ header {
     color: var(--clr-dark);
     font-size: var(--fs-body);
     font-weight: var(--fw-light);
+    transition: all 400ms;
+    text-decoration: none;
   }
 
   .portfolio-list--item.current-page {
@@ -985,7 +990,7 @@ header {
 }
 
 .social-list--item {
-  font-size: var(--fs-h3);
+  font-size: 1.5em;
   margin: 0 0.5em;
 }
 
