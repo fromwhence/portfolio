@@ -545,7 +545,7 @@ header {
     box-shadow: var(--boxshadow-light);
   }
 
-  section.intro {
+  .section.intro {
     margin: auto;
     padding: 1.75em 0 3em;
   }
@@ -577,7 +577,7 @@ header {
     margin-top: 0px;
   }
 
-  /* Indidivual ortfolio page subtitle spacing */
+  /* Indidivual portfolio page subtitle spacing */
 
   .hexspire-subtitle {
     padding-right: 2.65em;
