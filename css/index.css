@@ -1096,12 +1096,12 @@ header {
 }
 
 .carousel--button-left {
-  left: 0;
+  left: 1px;
   padding-right: 0.7em;
 }
 
 .carousel--button-right {
-  right: 0;
+  right: 1px;
   padding-left: 0.7em;
 }
 
