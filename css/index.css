@@ -417,19 +417,22 @@ header {
 .portfolio-breadcrumb {
   display: inline;
   font-weight: var(--fw-reg);
-  color: var(--clr-link);
+  color: var(--clr-dark);
+}
+
+.portfolio-breadcrumb a {
+  color: var(--clr-dark);
 }
 
 .portfolio-breadcrumb + .portfolio-breadcrumb:before {
   content: '/\00a0';
-  color: var(--clr-link);
+  color: var(--clr-dark);
   font-weight: var(--fw-reg);
-  padding: 0.5em;
+  padding: 0 0 0 0.5em;
 }
 
 .breadcrumb-current {
-  font-weight: var(--fw-reg);
-  color: var(--clr-dark-hover);
+  font-weight: var(--fw-light);
 }
 
 .portfolio-list--nav {
