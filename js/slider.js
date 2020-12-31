@@ -135,6 +135,7 @@ const slider = function () {
       const { slide } = e.target.dataset;
       goToSlide(slide);
       activateDot(slide);
+      showSlides();
     }
   });
 };
