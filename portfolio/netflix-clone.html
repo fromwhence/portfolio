@@ -18,6 +18,9 @@
       content="The portfolio site of Matt Wenc, a front-end developer based in Chicago."
     />
     <title>Matt Wenc Portfolio - Netflix Clone</title>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/portfolio.js"></script>
+    <script defer src="../js/slider.js"></script>
   </head>
   <body>
     <header class="portfolio-page">
@@ -105,67 +108,52 @@
       <div class="portfolio-item--description">
         <h4>Description</h4>
         <p>
-          Built using React, the <strong>Netflix Clone</strong> displays a
-          selection of random colors. The user can view a color's hex value, add
-          colors to the favorite section, and copy the hex color codes from the
-          favorites to the clipboard for additional use. The color grid can be
-          sorted by hue and refreshed to display a new set of random colors.
+          Built using React, the <strong>Netflix Clone</strong> was the final
+          project for Scrimba's Frontend Developer Career Path program.
         </p>
       </div>
-      <div class="carousel">
-        <button class="carousel--button carousel--button-left is-hidden">
-          &#10094;
-        </button>
-        <div class="carousel--track-container">
-          <ul class="carousel--track">
-            <li class="carousel--slide current-slide">
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-sml-home.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-wide-home.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-lrg"
-              />
-            </li>
-            <li class="carousel--slide">
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-sml-movies.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-wide-movies.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-lrg"
-              />
-            </li>
-            <li class="carousel--slide">
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-sml-movie-detail.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/netflix-clone/netflix-clone-wide-movie-detail.png"
-                alt="Cropped view of Netflix Clone"
-                class="carousel--image-lrg"
-              />
-            </li>
-          </ul>
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-sml-home.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-wide-home.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-large"
+          />
         </div>
-        <button class="carousel--button carousel--button-right">
-          &#10095;
-        </button>
-        <!-- Slideshow counter dots -->
-        <div class="carousel--nav">
-          <button class="carousel--indicator current-slide"></button>
-          <button class="carousel--indicator"></button>
-          <button class="carousel--indicator"></button>
+        <div class="slide">
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-sml-movies.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-wide-movies.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-large"
+          />
         </div>
+        <div class="slide">
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-sml-movie-detail.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/netflix-clone/netflix-clone-wide-movie-detail.png"
+            alt="Cropped view of Netflix Clone"
+            class="slide-large"
+          />
+        </div>
+        <button class="slider-btn slider-btn--left">&larr;</button>
+        <button class="slider-btn slider-btn--right">&rarr;</button>
       </div>
+      <div class="dots"></div>
+      <!-- End of slider -->
       <div class="portfolio-item--features">
         <h4>Features</h4>
         <ul class="features-list">
@@ -222,8 +210,5 @@
         </li>
       </ul>
     </footer>
-    <script src="../js/index.js" defer></script>
-    <script src="../js/portfolio.js" defer></script>
-    <script src="../js/carousel.js" defer></script>
   </body>
 </html>

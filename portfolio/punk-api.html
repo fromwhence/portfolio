@@ -18,6 +18,9 @@
       content="The portfolio site of Matt Wenc, a front-end developer based in Chicago."
     />
     <title>Matt Wenc Portfolio - Punk API Beer Filter</title>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/portfolio.js"></script>
+    <script defer src="../js/slider.js"></script>
   </head>
   <body>
     <header class="portfolio-page">
@@ -101,7 +104,7 @@
         class="intro-img portfolio-item"
       />
     </section>
-
+    <!-- Slider -->
     <section class="section portfolio-item--individual">
       <div class="portfolio-item--description">
         <h4>Description</h4>
@@ -111,48 +114,48 @@
           hoppiness (IBU) and view information about the individual beers.
         </p>
       </div>
-      <div class="carousel">
-        <button class="carousel--button carousel--button-left is-hidden">
-          &#10094;
-        </button>
-        <div class="carousel--track-container">
-          <ul class="carousel--track">
-            <li class="carousel--slide current-slide">
-              <img
-                src="../img/my-work/punk-api/punk-api-sml.png"
-                alt="Cropped view of Punk API beer filter app"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/punk-api/punk-api-wide.png"
-                alt="Cropped view of Punk API beer filter app"
-                class="carousel--image-lrg"
-              />
-            </li>
-            <li class="carousel--slide">
-              <img
-                src="../img/my-work/punk-api/punk-api-sml.png"
-                alt="Cropped view of Punk API beer filter app"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/punk-api/punk-api-wide-info.png"
-                alt="Cropped view of Punk API beer filter app"
-                class="carousel--image-lrg"
-              />
-            </li>
-          </ul>
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="../img/my-work/punk-api/punk-api-sml.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/punk-api/punk-api-wide.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-large"
+          />
         </div>
-        <button class="carousel--button carousel--button-right">
-          &#10095;
-        </button>
-
-        <!-- Slideshow counter dots -->
-        <div class="carousel--nav">
-          <button class="carousel--indicator current-slide"></button>
-          <button class="carousel--indicator"></button>
+        <div class="slide">
+          <img
+            src="../img/my-work/punk-api/punk-api-sml-info.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/punk-api/punk-api-wide-info.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-large"
+          />
         </div>
+        <div class="slide">
+          <img
+            src="../img/my-work/punk-api/punk-api-sml-sort-pg.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/punk-api/punk-api-wide-sort-pg.png"
+            alt="Cropped view of Punk API beer filter app"
+            class="slide-large"
+          />
+        </div>
+        <button class="slider-btn slider-btn--left">&larr;</button>
+        <button class="slider-btn slider-btn--right">&rarr;</button>
       </div>
+      <div class="dots"></div>
+      <!-- End of slider -->
       <div class="portfolio-item--features">
         <h4>Features</h4>
         <ul class="features-list">
@@ -169,7 +172,7 @@
           </li>
           <li>
             Using JavaScript, results can be sorted by beer name, alcohol
-            volume, and hoppiness. The quanity of results per page can also be
+            volume, and hoppiness. The number of results per page can also be
             modified by the user.
           </li>
           <li>
@@ -208,8 +211,5 @@
         </li>
       </ul>
     </footer>
-    <script src="../js/index.js" defer></script>
-    <script src="../js/portfolio.js" defer></script>
-    <script src="../js/carousel.js" defer></script>
   </body>
 </html>

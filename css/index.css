@@ -4,9 +4,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* border: 1px solid pink; */
   padding: 0;
   margin: 0;
+  /* border: 1px solid pink; */
 }
 
 ul[class],
@@ -80,10 +80,11 @@ section {
   transition: transform 500ms, opacity 750ms;
 }
 
+/* In progress
 .section--hidden {
   opacity: 0;
   transform: translateY(2rem);
-}
+} */
 
 @media (min-width: 600px) {
   .section,
@@ -459,13 +460,13 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 3em;
+    /* padding-left: 3em; */
   }
 
   .portfolio-list {
     display: flex;
     width: 80%;
-    max-width: 750px;
+    max-width: 850px;
     height: auto;
     justify-content: space-between;
     align-items: center;
@@ -1017,8 +1018,16 @@ header {
 .portfolio-item--individual {
   width: 100%;
   height: auto;
+
   color: var(--clr-light);
   background-color: var(--clr-dark);
+}
+
+section .portfolio-item--description,
+section .portfolio-item--features {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .portfolio-item--description h4,
@@ -1034,131 +1043,94 @@ header {
   }
 }
 
-/* Portfolio Carousel */
+/* Slider */
 
-.carousel {
+.slider {
   position: relative;
   max-width: 600px;
   height: 384px;
+  width: 100%;
   margin: 2.275em auto 0;
+  overflow: hidden;
+  border: 1px solid var(--clr-light-mid);
 }
 
 @media (min-width: 600px) {
-  .carousel {
+  .slider {
     max-width: 950px;
-    height: 411px;
+    height: 410px;
+    margin: 2.275em auto 0;
   }
-}
-
-.carousel--track-container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel--track {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 500ms ease-in;
-}
-
-.carousel--slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
-
-.carousel--image-sml,
-.carousel--image-lrg {
-  height: 100%;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--clr-light);
-}
-
-.carsousel--image-lrg {
-  display: none;
-}
-
-.carousel--button {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 0.5em 0.5em;
-  border: none;
-  color: var(--clr-light-mid);
-  background-color: var(--clr-dark-trans);
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-h3);
-  transition: 300ms ease;
-  z-index: 2;
-}
-
-.carousel--button-left {
-  left: 1px;
-  padding-right: 0.7em;
-}
-
-.carousel--button-right {
-  right: 1px;
-  padding-left: 0.7em;
-}
-
-.carousel--button:hover,
-.carousel--button:focus {
-  color: var(--clr-light);
-  background-color: var(--clr-dark-hover);
-}
-
-.carousel--nav {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 1.25em 0 1em;
-  z-index: 3;
-}
-
-.carousel--indicator {
-  cursor: pointer;
-  height: 0.9em;
-  width: 0.9em;
-  margin: 0 0.375em;
-  background: var(--clr-light-transp);
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 300ms;
-  z-index: 3;
-}
-
-.carousel--indicator.current-slide,
-.carousel--indicator:hover {
-  background-color: var(--clr-light-active);
 }
 
 .is-hidden {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .carousel--nav {
-    padding: 1.5em 1.5em 1.25em;
-  }
+.is-invisible {
+  opacity: 0;
+}
 
-  .carousel--indicator {
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+  background-repeat: no-repeat;
+}
+
+.slider-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+  color: var(--clr-light-active);
+  background-color: var(--clr-dark-trans);
+  padding: 0.4em 0.4em;
+  border: none;
+  font-size: var(--fs-h3);
+  transition: 0.3s;
+}
+
+.slider-btn:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-dark-hover);
+}
+
+.slider-btn--right {
+  right: 0;
+}
+
+.dots {
+  margin: 1.5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots-dot {
+  border: none;
+  height: 0.9em;
+  width: 0.9em;
+  margin: 0 0.625em;
+  cursor: pointer;
+  background: var(--clr-light-transp);
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 3;
+}
+
+@media (min-width: 600px) {
+  .dots-dot {
     height: 1em;
     width: 1em;
-    margin: 0 0.5em;
   }
+}
+
+.dots-dot--active {
+  background-color: var(--clr-light-active);
 }
 
 /* Portfolio item features */
@@ -1167,7 +1139,7 @@ header {
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 3em;
+  padding-top: 0;
 }
 
 @media (min-width: 600px) {

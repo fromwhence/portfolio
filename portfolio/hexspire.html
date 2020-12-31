@@ -18,6 +18,9 @@
       content="The portfolio site of Matt Wenc, a front-end developer based in Chicago."
     />
     <title>Matt Wenc Portfolio - HexSpire</title>
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/portfolio.js"></script>
+    <script defer src="../js/slider.js"></script>
   </head>
   <body>
     <header class="portfolio-page">
@@ -108,47 +111,36 @@
           hue and refreshed to display a new set of random colors.
         </p>
       </div>
-      <div class="carousel">
-        <button class="carousel--button carousel--button-left is-hidden">
-          &#10094;
-        </button>
-        <div class="carousel--track-container">
-          <ul class="carousel--track">
-            <li class="carousel--slide current-slide">
-              <img
-                src="../img/my-work/hexspire/hexspire-sml-random.png"
-                alt="Cropped view of HexSpire color app"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/hexspire/hexspire-wide-random.png"
-                alt="Cropped view of HexSpire color app"
-                class="carousel--image-lrg"
-              />
-            </li>
-            <li class="carousel--slide">
-              <img
-                src="../img/my-work/hexspire/hexspire-sml-hue.png"
-                alt="Cropped view of HexSpire color app"
-                class="carousel--image-sml is-hidden"
-              />
-              <img
-                src="../img/my-work/hexspire/hexspire-wide-hue.png"
-                alt="Cropped view of HexSpire color app"
-                class="carousel--image-lrg"
-              />
-            </li>
-          </ul>
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="../img/my-work/hexspire/hexspire-sml-random.png"
+            alt="Cropped view of HexSpire color app"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/hexspire/hexspire-wide-random.png"
+            alt="Cropped view of HexSpire color app"
+            class="slide-large"
+          />
         </div>
-        <button class="carousel--button carousel--button-right">
-          &#10095;
-        </button>
-        <!-- Slideshow counter dots -->
-        <div class="carousel--nav">
-          <button class="carousel--indicator current-slide"></button>
-          <button class="carousel--indicator"></button>
+        <div class="slide">
+          <img
+            src="../img/my-work/hexspire/hexspire-sml-hue.png"
+            alt="Cropped view of HexSpire color app"
+            class="slide-small is-hidden"
+          />
+          <img
+            src="../img/my-work/hexspire/hexspire-wide-hue.png"
+            alt="Cropped view of HexSpire color app"
+            class="slide-large"
+          />
         </div>
+        <button class="slider-btn slider-btn--left">&larr;</button>
+        <button class="slider-btn slider-btn--right">&rarr;</button>
       </div>
+      <div class="dots"></div>
+      <!-- End of slider -->
       <div class="portfolio-item--features">
         <h4>Features</h4>
         <ul class="features-list">
@@ -210,8 +202,5 @@
         </li>
       </ul>
     </footer>
-    <script src="../js/index.js" defer></script>
-    <script src="../js/portfolio.js" defer></script>
-    <script src="../js/carousel.js" defer></script>
   </body>
 </html>

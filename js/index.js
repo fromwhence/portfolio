@@ -49,7 +49,7 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
   }
 });
 
-// Reveal sections using Intersection Observer API
+// Reveal section content using Intersection Observer API
 // IN PROGRESS
 // const allSections = document.querySelectorAll('.section');
 

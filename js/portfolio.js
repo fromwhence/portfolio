@@ -13,7 +13,6 @@ const handleHover = function (e) {
 
     siblings.forEach(el => {
       if (el !== link) el.style.opacity = this;
-      el.style.borderBottom = 'px solid var(--clr-accent)';
     });
 
     portfolioLiActive.style.borderBottom = `3px solid rgba(108, 224, 253, ${this})`;
