@@ -507,6 +507,7 @@ header {
 
 .intro-img {
   box-shadow: var(--boxshadow-light);
+  background: var(--clr-mid-dark);
 }
 
 .section-title--intro {
@@ -1023,6 +1024,7 @@ header {
 /* Individual portfolio item styles */
 .intro-img.portfolio-item {
   box-shadow: var(--boxshadow-light);
+  background-color: #7a7f79;
 }
 
 .portfolio-item--individual {
