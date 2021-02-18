@@ -58,7 +58,6 @@ ol[class] {
 }
 
 /* General styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -79,12 +78,6 @@ section {
   margin: 0;
   transition: transform 500ms, opacity 750ms;
 }
-
-/* In progress
-.section--hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-} */
 
 @media (min-width: 600px) {
   .section,
@@ -123,7 +116,6 @@ p {
 }
 
 /* Links and buttons */
-
 a {
   color: var(--clr-link);
   text-decoration: none;
@@ -170,7 +162,6 @@ a.light-link:focus {
 }
 
 /* Typography */
-
 h1,
 h2,
 h3,
@@ -230,7 +221,6 @@ h4 {
 }
 
 /* Header and Nav */
-
 header {
   display: flex;
   padding: 1.5em 1.75em 0;
@@ -394,7 +384,6 @@ header {
 }
 
 /* Portfolio menu */
-
 .portfolio-page {
   height: 100%;
   width: 100%;
@@ -402,7 +391,6 @@ header {
 }
 
 /* Portfollio breadcrumbs */
-
 .portfolio-breadcrumbs--container {
   width: 100%;
   height: auto;
@@ -512,7 +500,6 @@ header {
 }
 
 /* Intro section */
-
 .intro {
   position: relative;
   padding-top: 1.25em;
@@ -578,14 +565,13 @@ header {
     font-size: var(--fs-h4);
     text-align: right;
     position: relative;
-    padding-right: 0.9em;
+    padding-right: 1.1em;
     left: -3.5em;
     width: calc(100% + 7em);
     margin-top: 0px;
   }
 
   /* Indidivual portfolio page subtitle spacing */
-
   .hexspire-subtitle {
     padding-right: 2.65em;
   }
@@ -631,7 +617,6 @@ header {
   }
 
   /* Portfolio page subtitles */
-
   .hexspire-subtitle {
     padding-right: 3.625em;
   }
@@ -650,7 +635,6 @@ header {
 }
 
 /* My services section */
-
 .my-services {
   background-color: var(--clr-dark);
   background-image: url(../img/services-bg-sml-drk.jpg);
@@ -689,9 +673,13 @@ header {
   margin: 0 auto 2em auto;
 }
 
+.service p {
+  text-align: left;
+}
+
 @media (min-width: 700px) {
   .service {
-    max-width: 600px;
+    max-width: 620px;
   }
 }
 
@@ -706,7 +694,7 @@ header {
 @media (min-width: 950px) {
   .services {
     display: flex;
-    max-width: 1024px;
+    max-width: 1068px;
     margin: auto;
     margin-bottom: 2.75em;
   }
@@ -715,17 +703,16 @@ header {
     margin-bottom: 0;
   }
 
-  .service + .service {
-    margin-left: 3.5em;
-  }
-
   .service p {
     text-align: left;
+  }
+
+  .middle-service {
+    padding: 0 2.5em;
   }
 }
 
 /* About me section */
-
 .about-me-img--horiz,
 .about-me-img--vert {
   box-shadow: none;
@@ -740,7 +727,7 @@ header {
 }
 
 .about-me {
-  max-width: 1024px;
+  max-width: 1068px;
   margin: 0 auto;
 }
 
@@ -789,7 +776,7 @@ header {
     position: relative;
     left: -2.4em;
     width: calc(100% + 4.8em);
-    padding-left: 2.325em;
+    padding-left: 2.5em;
     padding-right: calc(220px + 3.75em);
     margin-bottom: 1em;
     z-index: -1;
@@ -854,7 +841,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   grid-gap: 3px;
-  max-width: 1024px;
+  max-width: 1068px;
   margin: 0 auto;
 }
 
@@ -882,11 +869,11 @@ header {
 @media (min-width: 900px) {
   section.my-work {
     padding-top: 3em;
-    padding-bottom: 4.5em;
+    padding-bottom: 5em;
   }
 
   .portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
@@ -1034,7 +1021,6 @@ header {
 }
 
 /* Individual portfolio item styles */
-
 .intro-img.portfolio-item {
   box-shadow: var(--boxshadow-light);
 }
