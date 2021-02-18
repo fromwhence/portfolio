@@ -28,7 +28,6 @@
 // Variables
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-link');
-const mainContent = document.getElementById('main-content');
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
@@ -49,25 +48,12 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
   }
 });
 
-// Reveal section content using Intersection Observer API
-// IN PROGRESS
-// const allSections = document.querySelectorAll('.section');
-
-// const revealSection = function (entries, observer) {
-//   const [entry] = entries;
-//   console.log(entry);
-
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove('section--hidden');
-//   observer.unobserve(entry.target);
-// };
-
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.1,
-// });
-
-// allSections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add('section--hidden');
-// });
+// Scroll to top navigation arrow
+document.querySelector('.scroll-to-top').addEventListener('click', function () {
+  console.log('Clicked');
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
