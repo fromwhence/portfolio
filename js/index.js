@@ -48,9 +48,15 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
   }
 });
 
-// Scroll to top navigation arrow
-document.querySelector('.scroll-to-top').addEventListener('click', function () {
-  console.log('Clicked');
+// Render scroll to top arrow if document is height is larger than 2000px
+const scrollToTop = document.querySelector('.scroll-to-top');
+
+if (document.body.offsetHeight > 2000) {
+  scrollToTop.classList.add('active');
+}
+
+// Scroll to top event
+scrollToTop.addEventListener('click', function () {
   window.scrollTo({
     top: 0,
     left: 0,

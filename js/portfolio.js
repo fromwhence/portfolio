@@ -18,6 +18,5 @@ const handleHover = function (e) {
     portfolioLiActive.style.borderBottom = `3px solid rgba(108, 224, 253, ${this})`;
   }
 };
-
 portfolioNav.addEventListener('mouseover', handleHover.bind(0.5));
 portfolioNav.addEventListener('mouseout', handleHover.bind(1));
