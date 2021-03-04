@@ -691,7 +691,9 @@ header {
 
 @media (min-width: 950px) {
   .services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5em;
     max-width: 1068px;
     margin: auto;
     margin-bottom: 2.75em;
@@ -705,9 +707,9 @@ header {
     text-align: left;
   }
 
-  .middle-service {
+  /* .middle-service {
     padding: 0 2.5em;
-  }
+  } */
 }
 
 /* About me section */
@@ -955,6 +957,13 @@ header {
 .portfolio-item:hover .app-name-btn,
 .portfolio-item:focus .app-name-btn {
   opacity: 1;
+}
+
+.portfolio-description {
+  margin: auto;
+  text-align: center;
+  margin-top: 1.5em;
+  max-width: 600px;
 }
 
 /* Footer */
