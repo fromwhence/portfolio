@@ -78,9 +78,7 @@ const slider = function () {
   // Hides slides to prevent image swiping at page load
   const hideSlides = function () {
     slides.forEach(function (s, i) {
-      console.log(s, i);
       if (i > 0) {
-        console.log('success!');
         s.classList.add('is-invisible');
       }
     });
