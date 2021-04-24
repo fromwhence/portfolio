@@ -28,7 +28,8 @@ ol[class] {
   --clr-light-mid: rgb(255, 255, 255, 0.7);
   --clr-light-transp: rgba(255, 255, 255, 0.3);
   --clr-mid-dark: #949494;
-  --clr-dark: #303030;
+  --clr-dark: #313131;
+  --clr-darker: #272727;
   --clr-dark-trans: rgba(48, 48, 48, 0.5);
   --clr-dark-hover: rgba(48, 48, 48, 0.8);
   --clr-link: #0078af;
@@ -240,7 +241,7 @@ header {
 
 .nav {
   position: fixed;
-  background: var(--clr-dark);
+  background: var(--clr-darker);
   color: var(--clr-light);
   top: 0;
   bottom: 0;
@@ -294,7 +295,7 @@ header {
 
 @media (min-width: 768px) {
   .nav {
-    left: 65%;
+    left: 60%;
   }
 
   .nav-item {
