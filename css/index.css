@@ -299,13 +299,17 @@ header {
   }
 
   .nav-item {
-    margin-top: 3.5em;
+    margin-top: 3.75em;
   }
 }
 
 @media (min-width: 1024px) {
   .nav {
     left: 70%;
+  }
+
+  .nav-list {
+    margin-top: 1.75em;
   }
 }
 
