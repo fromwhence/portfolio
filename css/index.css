@@ -1007,8 +1007,8 @@ header {
 .scroll-to-top {
   visibility: hidden;
   cursor: pointer;
-  font-size: 1.6em;
-  opacity: 0.7;
+  font-size: 1.75em;
+  opacity: 0.85;
   position: absolute;
   right: 0em;
   bottom: 0em;
@@ -1027,6 +1027,7 @@ header {
 @media (min-width: 768px) {
   .scroll-to-top {
     padding: 1em 1.25em 1em 1em;
+    font-size: 1.875em;
   }
 }
 

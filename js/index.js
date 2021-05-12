@@ -50,7 +50,7 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
 
 // Render scroll to top arrow if document is height is larger than 2000px
 const scrollToTop = document.querySelector('.scroll-to-top');
-if (document.body.offsetHeight > 2000) {
+if (document.body.offsetHeight > 1500) {
   scrollToTop.classList.add('active');
 }
 
