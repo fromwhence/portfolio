@@ -53,6 +53,8 @@ const scrollToTop = document.querySelector('.scroll-to-top');
 
 if (document.body.offsetHeight > 1500) {
   scrollToTop.classList.add('active');
+} else {
+  scrollToTop.classList.remove('active');
 }
 
 // Scroll to top event
